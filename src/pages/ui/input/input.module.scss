@@ -1,0 +1,46 @@
+.blockInput {
+  position: relative;
+  min-width: 145px;
+  margin-top: 35px;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+  z-index: 2;
+  background: #FFFFFF;
+  border-radius: 10px;
+
+  &:valid ~ .label,
+  &:focus ~ .label {
+    transform: translateY(-45px);
+    left: 20px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B0AFAF;
+  pointer-events: none;
+  transition: 1s ease;
+  z-index: 3;
+}
